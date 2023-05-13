@@ -1,10 +1,14 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
+import { LoginPage } from "./Routes";
 
 function App() {
   return (
-    <div className="App">
-      <h1 className=" bg-slate-800 text-white">Multivendor Ecommerce Store</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
